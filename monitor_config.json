@@ -1,0 +1,62 @@
+{
+  "server": {
+    "name": "Djiwa Roleplay SA-MP",
+    "hostname": "localhost",
+    "port": 7777,
+    "password": "",
+    "description": "Djiwa Roleplay Server",
+    "gamemode": "roleplay"
+  },
+  "monitoring": {
+    "enabled": true,
+    "check_interval": 30,
+    "max_retries": 3,
+    "timeout": 10
+  },
+  "alerts": {
+    "enabled": true,
+    "email_notifications": {
+      "enabled": false,
+      "recipients": []
+    },
+    "discord_webhook": {
+      "enabled": false,
+      "url": ""
+    }
+  },
+  "metrics": {
+    "track_players": true,
+    "track_fps": true,
+    "track_memory": true,
+    "track_cpu": true,
+    "track_bandwidth": true
+  },
+  "logging": {
+    "enabled": true,
+    "log_level": "info",
+    "log_file": "logs/monitor.log",
+    "max_log_size_mb": 100,
+    "retention_days": 30
+  },
+  "performance_thresholds": {
+    "max_ping_ms": 500,
+    "min_fps": 20,
+    "max_memory_percent": 80,
+    "max_cpu_percent": 85,
+    "player_disconnect_threshold": 5
+  },
+  "backup": {
+    "enabled": true,
+    "interval_hours": 24,
+    "backup_directory": "backups/"
+  },
+  "database": {
+    "enabled": false,
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "user": "",
+    "password": "",
+    "database": ""
+  }
+}
